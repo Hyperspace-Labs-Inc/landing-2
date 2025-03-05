@@ -1,6 +1,6 @@
 <template>
   <div class="container py-[72px] lg:py-[120px]">
-    <div class="lg:px-[96px]">
+    <div class="">
       <div class="h2 text-center">
         {{ $t('save_big') }}
         <span class="text-gradient">{{ $t('all_in_one') }}</span>

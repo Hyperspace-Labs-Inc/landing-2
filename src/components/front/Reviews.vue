@@ -4,6 +4,7 @@
       <div class="h2 max-w-[698px] px-6">
         {{ $t('dont') }}
         <span class="text-gradient">{{ $t('users') }}</span>
+        !
       </div>
 
       <div class="flex gap-5 max-lg:hidden">

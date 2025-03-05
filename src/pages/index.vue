@@ -2,25 +2,15 @@
   <div class="min-h-[100vh]">
     <TopPart />
 
-    <ClientOnly>
-      <HyperLoop />
-    </ClientOnly>
-
     <WhatIsHyperSpace />
 
     <WhyChooseHyperSpace />
-
-    <RealSavings  />
-
-    <EnchanceYourEfficiency />
 
     <Reviews />
 
     <ChooseYourDirection />
 
     <ThreeSteps />
-
-    <HyperSpaceInYourPocket />
 
     <FAQ />
 

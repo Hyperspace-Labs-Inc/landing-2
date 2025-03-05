@@ -1,121 +1,56 @@
 <template>
   <div class="container mt-[136px] lg:mt-[120px]">
-    <div class="h2 text-center">
-      <div class="text-gradient">{{ $t('why') }}</div>
-
-      <div class="text-black">{{ $t('hyperspace') }}?</div>
+    <div class="h2 mx-auto max-w-[770px] text-center">
+      <span class="text-gradient">{{ $t('why_choose') }}</span>
+      {{ $t('mobile_app') }}?
     </div>
 
-    <div class="mt-14 flex gap-8 max-lg:flex-col-reverse max-lg:gap-6 lg:mt-[72px]">
-      <Btn classes="lg:hidden mx-auto" w-fit to="https://hyperspace.ai/onboarding">
-        {{ $t('try_our') }}
-      </Btn>
-
-      <div ref="targetRef" class="relative flex-1">
-        <Transition name="fade" mode="in-out">
+    <div class="mt-[10px] flex gap-4">
+      <div class="flex-1 rounded-[40px] bg-white pb-20 pt-10">
+        <div>
           <img
-            src="/assets/images/animations/models.webp"
-            alt="Loading animation"
-            class="pointer-events-none w-full select-none object-contain"
-            :class="{ '!invisible': isLoaded }"
+            src="/assets/images/why/01.webp"
+            alt=""
+            class="w-full max-w-[410px] object-contain"
           />
-        </Transition>
+        </div>
 
-        <ClientOnly>
-          <Transition name="fade" mode="in-out">
-            <dotlottie-player
-              v-show="isLoaded"
-              subframe
-              ref="animationRef"
-              key="why"
-              class="pointer-events-none absolute left-0 top-0 w-full select-none"
-              src="/assets/animations/models.lottie"
-            />
-          </Transition>
-        </ClientOnly>
+        <div class="h5 mt-6 px-10 text-center">{{ $t('user_friendly') }}</div>
+
+        <div class="p-m mt-2 px-10 text-center">{{ $t('intuitive') }}</div>
+      </div>
+      <div class="flex-1 rounded-[40px] bg-white pb-20 pt-10">
+        <div>
+          <img
+            src="/assets/images/why/02.webp"
+            alt=""
+            class="w-full max-w-[410px] object-contain"
+          />
+        </div>
+
+        <div class="h5 mt-6 px-10 text-center">{{ $t('offline_access') }}</div>
+
+        <div class="p-m mt-2 px-10 text-center">{{ $t('access_your') }}</div>
       </div>
 
-      <div class="flex-1">
-        <div class="max-lg:text-center lg:p-[96px]">
-          <div class="h3" v-html="$t('all_tools')" />
-
-          <div class="p-m mt-4 lg:mt-6" v-html="$t('we_offer')" />
-
-          <Btn classes="mt-10 max-lg:hidden" w-fit to="https://hyperspace.ai/onboarding">
-            {{ $t('try_our') }}
-          </Btn>
+      <div class="flex-1 rounded-[40px] bg-white pb-20 pt-10">
+        <div>
+          <img
+            src="/assets/images/why/03.webp"
+            alt=""
+            class="w-full max-w-[410px] object-contain"
+          />
         </div>
+
+        <div class="h5 mt-6 px-10 text-center">{{ $t('seamless_syncing') }}</div>
+
+        <div class="p-m mt-2 px-10 text-center">{{ $t('your_data') }}</div>
       </div>
     </div>
+
+    <Btn classes="mx-auto mt-[72px] mb-[302px]" w-fit to="https://hyperspace.ai/onboarding">
+      {{ $t('try_mobile') }}
+    </Btn>
   </div>
 </template>
-
-<script lang="ts" setup>
-import { useElementBounding } from '@vueuse/core'
-
-const isLoaded = ref(false)
-
-const targetRef = ref()
-
-const animationRef = ref()
-
-const { top, height } = useElementBounding(targetRef)
-
-watch(
-  () => animationRef.value,
-  init => {
-    if (!init) {
-      return
-    }
-
-    animationRef.value?.addEventListener?.('rendered', () => {
-      isLoaded.value = true
-    })
-  }
-)
-
-watch(top, topValue => {
-  if (!animationRef.value) {
-    return
-  }
-
-  const instance = animationRef.value?.getLottie()
-
-  if (!instance) {
-    console.warn('Lottie instance is undefined')
-    return
-  }
-
-  const { totalFrames } = instance
-
-  if (!totalFrames) {
-    console.warn('totalFrames is undefined or 0')
-    return
-  }
-
-  const viewportHeight = window.innerHeight
-
-  const fullScrollDistance = height.value + viewportHeight
-
-  const progress = Math.min(1, Math.max(0, (viewportHeight - topValue) / fullScrollDistance))
-
-  const targetFrame = Math.round(progress * totalFrames)
-
-  // console.warn('targetFrame:', targetFrame, 'totalFrames:', totalFrames)
-
-  requestAnimationFrame(() => {
-    animationRef.value.seek(targetFrame)
-  })
-})
-</script>
-
-<style scoped>
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 1s ease-in-out;
-}
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0.5;
-}
-</style>
+<script setup lang="ts"></script>

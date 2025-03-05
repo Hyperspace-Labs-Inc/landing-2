@@ -1,10 +1,10 @@
 <template>
   <div class="container py-[72px] lg:py-[120px] lg:text-center">
-    <div class="h2 max-lg:text-center">
-      {{ $t('three') }}
-      <span class="text-gradient">{{ $t('solve') }}&nbsp;</span>
-      <br class="max-lg:hidden" />
-      <span class="text-gradient">{{ $t('everything') }}</span>
+    <div class="h2 mx-auto max-w-[816px] max-lg:text-center">
+      <span class="text-gradient">
+        {{ $t('three') }}
+      </span>
+      {{ $t('solve') }}&nbsp;
     </div>
 
     <div class="mt-12 flex gap-14 max-lg:flex-col lg:mt-[96px] lg:gap-10">

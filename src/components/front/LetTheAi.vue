@@ -16,10 +16,12 @@
               {{ $t('let_the_ai') }}
               <span class="text-green-600">{{ $t('work') }}</span>
             </div>
-            <div class="h3 text-green-600">{{ $t('and_generate') }}</div>
             <div class="h3">
-              <span class="text-green-600">{{ $t('money') }}</span>
+              <span class="text-green-600">{{ $t('models') }}</span>
               {{ $t('for_you') }}
+            </div>
+            <div class="h3">
+              {{ $t('device') }}
             </div>
           </div>
 
@@ -38,7 +40,11 @@
       <div
         class="min-h-[276px] bg-cover bg-no-repeat max-lg:rounded-t-[64px] lg:flex-1 lg:rounded-r-[64px] lg:bg-[url(/assets/images/alltools.webp)]"
       >
-        <img src="/assets/images/1000.webp" class="rounded-t-[64px] w-full object-contain lg:hidden" alt="" />
+        <img
+          src="/assets/images/1000.webp"
+          class="w-full rounded-t-[64px] object-contain lg:hidden"
+          alt=""
+        />
       </div>
     </div>
   </div>
