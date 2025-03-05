@@ -1,11 +1,11 @@
 <template>
-  <div class="container mt-[136px] lg:mt-[120px]">
+  <div class="mt-[72 px] container lg:mt-[120px]">
     <div class="h2 mx-auto max-w-[770px] text-center">
       <span class="text-gradient">{{ $t('why_choose') }}</span>
       {{ $t('mobile_app') }}?
     </div>
 
-    <div class="mt-[10px] flex gap-4">
+    <div class="mt-[72px] flex gap-2 max-lg:-mx-4 max-lg:flex-col lg:mt-[10px] lg:gap-4">
       <div class="flex-1 rounded-[40px] bg-white pb-20 pt-10">
         <div>
           <img
@@ -48,7 +48,11 @@
       </div>
     </div>
 
-    <Btn classes="mx-auto mt-[72px] mb-[302px]" w-fit to="https://hyperspace.ai/onboarding">
+    <Btn
+      classes="mx-auto mt-10  lg:mt-[72px] mb-[72px] lg:mb-[302px]"
+      w-fit
+      to="https://hyperspace.ai/onboarding"
+    >
       {{ $t('try_mobile') }}
     </Btn>
   </div>

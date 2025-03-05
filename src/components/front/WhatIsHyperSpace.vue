@@ -1,5 +1,5 @@
 <template>
-  <div class="container py-20 lg:py-[120px]">
+  <div class="container py-[64px] lg:py-[120px]">
     <div class="flex gap-8 max-lg:flex-col lg:gap-[88px]">
       <div class="w-full max-w-[584px]">
         <div class="h2 max-lg:text-center">
