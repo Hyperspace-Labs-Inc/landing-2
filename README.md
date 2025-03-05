@@ -1,1 +1,1 @@
-# landing-2
+# hs-frontend

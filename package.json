@@ -1,0 +1,52 @@
+{
+  "name": "nuxt-app",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "nuxt start",
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@aarsteinmedia/dotlottie-player-light": "^5.1.0",
+    "@iconify-json/heroicons": "^1.2.1",
+    "@nuxt/icon": "^1.6.1",
+    "@nuxt/ui": "^2.19.2",
+    "@nuxtjs/color-mode": "^3.5.2",
+    "@nuxtjs/i18n": "^8.3.1",
+    "@vueuse/components": "^11.1.0",
+    "@vueuse/core": "^11.1.0",
+    "date-fns": "^2.30.0",
+    "embla-carousel-auto-scroll": "^8.5.2",
+    "embla-carousel-autoplay": "^8.5.2",
+    "embla-carousel-fade": "^8.5.2",
+    "embla-carousel-vue": "^8.5.2",
+    "nuxt": "^3.14.159",
+    "nuxt-icons": "^3.2.1",
+    "nuxt-mail": "^5.1.1",
+    "tailwind-merge": "^2.2.1",
+    "v-calendar": "^3.1.2",
+    "vue": "latest",
+    "vue-router": "latest",
+    "vue3-lottie": "^3.3.1"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.11.4",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.12",
+    "sass": "^1.71.1",
+    "tailwindcss": "^3.4.14"
+  },
+  "nuxt-i18n": {
+    "locales": [
+      "src/locales/en.json",
+      "src/locales/ru.json"
+    ]
+  }
+}
