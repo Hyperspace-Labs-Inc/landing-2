@@ -7,7 +7,7 @@
 
           <div class="p-m mt-4 lg:mt-6" v-html="$t('you_pay')" />
 
-          <Btn classes="mt-10 max-lg:hidden" w-fit to="https://hyperspace.ai/onboarding">{{ $t('start') }}</Btn>
+          <Btn classes="mt-10 max-lg:hidden" w-fit to="https://hyperspace.ai/onboarding-app">{{ $t('start') }}</Btn>
         </div>
       </div>
 
@@ -39,7 +39,7 @@
           <input ref="sliderRef" type="range" min="0" max="100" value="50" class="slider" />
         </div>
 
-        <Btn classes="mt-10 mx-auto lg:hidden" w-fit to="https://hyperspace.ai/onboarding">{{ $t('start') }}</Btn>
+        <Btn classes="mt-10 mx-auto lg:hidden" w-fit to="https://hyperspace.ai/onboarding-app">{{ $t('start') }}</Btn>
       </div>
     </div>
   </div>

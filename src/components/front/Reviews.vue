@@ -1,6 +1,6 @@
 <template>
   <div class="mt-[72px] bg-white py-[72px] lg:mt-[200px] lg:py-[144px]">
-    <div class="mx-auto flex max-w-[1086px] justify-between">
+    <div class="mx-auto flex max-w-[1086px] items-center justify-between">
       <div class="h2 max-w-[698px] px-6">
         {{ $t('dont') }}
         <span class="text-gradient">{{ $t('users') }}</span>
@@ -54,7 +54,7 @@
       </button>
     </div>
 
-    <Btn classes="mt-12 mx-auto max-lg:hidden" to="https://hyperspace.ai/onboarding" w-fit>
+    <Btn classes="mt-12 mx-auto max-lg:hidden" to="https://hyperspace.ai/onboarding-app" w-fit>
       {{ $t('solve_your') }}
     </Btn>
   </div>

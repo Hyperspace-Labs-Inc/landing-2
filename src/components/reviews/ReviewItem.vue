@@ -1,7 +1,7 @@
 <template>
   <NuxtLink
     class="mx-2 flex w-[90vw] flex-shrink-0 flex-col gap-6 rounded-[32px] bg-black-100 p-8 lg:w-[400px]"
-    to="https://hyperspace.ai/onboarding"
+    to="https://hyperspace.ai/onboarding-app"
   >
     <span class="flex gap-4">
       <img

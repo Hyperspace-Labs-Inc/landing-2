@@ -68,13 +68,13 @@
 
           <Divider class="bg-black-1100" :class="{ '!bg-black-1300': !selected }" />
 
-          <div class="u14b flex flex-col items-end text-right mb-4">
+          <div class="u14b mb-4 flex flex-col items-end text-right">
             <template v-if="selected">
               <div class="h3 text-gradient">$19.99</div>
               {{ $t('for_all') }}
             </template>
             <template v-else>
-              <div class="h3  text-purple">$200+</div>
+              <div class="h3 text-purple">$200+</div>
               {{ $t('for') }} 10 {{ $t('models') }}
             </template>
           </div>
@@ -86,67 +86,67 @@
         />
       </div>
 
-      <table class="web-big-body mt-[73px] w-full max-lg:hidden">
-        <tbody>
-          <tr>
-            <td></td>
-            <td class="p-m rounded-t-[32px] bg-black-950 px-9 pt-9">
-              buying
-              <br />
-              <strong class="u19b">{{ $t('separate') }}</strong>
-            </td>
-            <td class="w-6 flex-shrink-0">&nbsp;</td>
-            <td
-              class="h5 relative flex h-full items-center justify-center rounded-t-[32px] border-l-[5px] border-r-[5px] border-t-[5px] border-purple border-b-black-1000/20 bg-white p-11 text-center"
-            >
-              <img
-                src="/assets/images/hs.webp"
-                alt=""
-                class="absolute left-1/2 top-0 z-10 mt-[-23px] w-[114px] -translate-x-1/2 object-contain"
-              />
-            </td>
-          </tr>
-          <tr>
-            <td class="u18b border-b border-black-1000/20 py-3">{{ $t('cost') }}</td>
-            <td class="border-b border-black-1000/20 bg-black-950 p-9">$20 {{ $t('each') }}</td>
-            <td class="w-6 flex-shrink-0 border-b border-b-black-1000/20">&nbsp;</td>
-            <td
-              class="h5 relative flex h-full items-center justify-center border-b border-l-[5px] border-r-[5px] border-purple border-b-black-1000/20 bg-white px-4 pb-8 pt-10 text-center"
-            >
-              $19.99
-            </td>
-          </tr>
-          <tr>
-            <td class="u18b border-b border-black-1000/20 py-3">Models included</td>
-            <td class="p-m border-b border-black-1000/20 bg-black-950 p-9">1</td>
-            <td class="w-6 flex-shrink-0 border-b border-b-black-1000/20">&nbsp;</td>
-            <td
-              class="h5 flex items-center justify-center border-b border-l-[5px] border-r-[5px] border-purple border-b-black-1000/20 bg-white p-9"
-            >
-              1 000+
-            </td>
-          </tr>
-          <tr>
-            <td class="u18b py-3">Total Monthly Cost</td>
-            <td class="p-m rounded-b-[32px] bg-black-950 p-9">$200+ for 10 models</td>
-            <td class="w-6 flex-shrink-0">&nbsp;</td>
-            <td class="save-big--bg r20b">
-              <strong class="h4 text-purple">$19.99</strong>
+      <div class="web-big-body mt-[73px] w-full max-lg:hidden lg:px-[96px]">
+        <div class="grid grid-cols-[auto_336px_24px_336px]">
+          <div></div>
+          <div class="p-m block rounded-t-[32px] bg-black-950 px-9 pt-9 lg:max-w-[336px]">
+            buying
+            <br />
+            <strong class="u19b">{{ $t('separate') }}</strong>
+          </div>
+          <div class="w-6 flex-shrink-0">&nbsp;</div>
+          <div
+            class="h5 relative flex h-full items-center justify-center rounded-t-[32px] border-l-[5px] border-r-[5px] border-t-[5px] border-purple border-b-black-1000/20 bg-white p-11 text-center lg:max-w-[336px]"
+          >
+            <img
+              src="/assets/images/hs.webp"
+              alt=""
+              class="absolute left-1/2 top-0 z-10 mt-[-23px] w-[114px] -translate-x-1/2 object-contain"
+            />
+          </div>
+          <div class="u18b flex items-center border-b border-black-1000/20 py-3">
+            {{ $t('cost') }}
+          </div>
+          <div class="border-b border-black-1000/20 bg-black-950 p-9 lg:max-w-[336px]">
+            $20 {{ $t('each') }}
+          </div>
+          <div class="w-6 flex-shrink-0 border-b border-b-black-1000/20">&nbsp;</div>
+          <div
+            class="h5 relative flex h-full items-center justify-center border-b border-l-[5px] border-r-[5px] border-purple border-b-black-1000/20 bg-white px-4 pb-8 pt-10 text-center lg:max-w-[336px]"
+          >
+            $19.99
+          </div>
+          <div class="u18b flex items-center border-b border-black-1000/20 py-3">
+            Models included
+          </div>
+          <div class="p-m border-b border-black-1000/20 bg-black-950 p-9 lg:max-w-[336px]">1</div>
+          <div class="w-6 flex-shrink-0 border-b border-b-black-1000/20">&nbsp;</div>
+          <div
+            class="h5 flex items-center justify-center border-b border-l-[5px] border-r-[5px] border-purple border-b-black-1000/20 bg-white p-9 lg:max-w-[336px]"
+          >
+            1 000+
+          </div>
+          <div class="u18b flex items-center py-3">Total Monthly Cost</div>
+          <div class="p-m rounded-b-[32px] bg-black-950 p-9 lg:max-w-[336px]">
+            $200+ for 10 models
+          </div>
+          <div class="w-6 flex-shrink-0">&nbsp;</div>
+          <div class="save-big--bg r20b lg:max-w-[336px]">
+            <strong class="h4 text-purple">$19.99</strong>
 
-              for all
+            for all
 
-              <img src="/assets/images/arrow_down.svg" alt="" class="absolute top-full" />
-            </td>
-          </tr>
-        </tbody>
-      </table>
+            <img src="/assets/images/arrow_down.svg" alt="" class="absolute top-full" />
+          </div>
+        </div>
+      </div>
 
       <div class="h5 mt-16 text-center lg:mt-[83px]">
         <span class="text-gradient">{{ $t('save_over') }}</span>
         {{ $t('month') }}
       </div>
 
-      <Btn classes="lg:w-fit lg:mx-auto mt-6" to="https://hyperspace.ai/onboarding">
+      <Btn classes="lg:w-fit lg:mx-auto mt-6" to="https://hyperspace.ai/onboarding-app">
         {{ $t('start_free') }}
       </Btn>
     </div>
@@ -161,7 +161,7 @@ const selected = ref(true)
 .save-big {
   &--bg {
     @apply relative flex flex-col items-center justify-center
-    rounded-b-[32px] border-b-[5px] border-l-[5px] border-r-[5px] 
+    rounded-b-[32px] border-b-[5px] border-l-[5px] border-r-[5px]
     border-purple bg-white px-20 py-3
     before:absolute before:-bottom-4 before:left-4
     before:z-[-1] before:h-[400px] before:w-full

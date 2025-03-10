@@ -15,7 +15,7 @@
 
       <div class="flex gap-4 max-lg:hidden">
         <Btn color="ghost" to="https://hyperspace.ai/sign-in" size="small">{{ $t('login') }}</Btn>
-        <Btn to="https://hyperspace.ai/onboarding" size="small">{{ $t('tryfree') }}</Btn>
+        <Btn to="https://hyperspace.ai/onboarding-app" size="small">{{ $t('tryfree') }}</Btn>
       </div>
 
       <button style="outline: 0" class="lg:hidden" @click="isShowMobileMenu = !isShowMobileMenu">

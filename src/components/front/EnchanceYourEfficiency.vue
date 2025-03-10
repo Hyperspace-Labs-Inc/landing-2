@@ -23,7 +23,7 @@
           </Transition>
         </ClientOnly>
 
-        <Btn classes="mt-10 mx-auto lg:hidden" to="https://hyperspace.ai/onboarding" w-fit>
+        <Btn classes="mt-10 mx-auto lg:hidden" to="https://hyperspace.ai/onboarding-app" w-fit>
           {{ $t('boost') }}
         </Btn>
       </div>
@@ -34,7 +34,7 @@
 
           <div class="p-m mt-4 lg:mt-10" v-html="$t('with_ai')" />
 
-          <Btn classes="mt-10 max-lg:hidden" to="https://hyperspace.ai/onboarding" w-fit>
+          <Btn classes="mt-10 max-lg:hidden" to="https://hyperspace.ai/onboarding-app" w-fit>
             {{ $t('boost') }}
           </Btn>
         </div>

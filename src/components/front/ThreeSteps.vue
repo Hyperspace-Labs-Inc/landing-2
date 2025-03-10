@@ -25,7 +25,7 @@
       </div>
     </div>
 
-    <Btn classes="lg:mx-auto lg:min-w-[255px] mt-12 lg:w-fit" to="https://hyperspace.ai/onboarding">
+    <Btn classes="lg:mx-auto lg:min-w-[255px] mt-12 lg:w-fit" to="https://hyperspace.ai/onboarding-app">
       {{ $t('try_it_now') }}
     </Btn>
   </div>

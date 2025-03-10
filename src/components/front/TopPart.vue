@@ -1,6 +1,6 @@
 <template>
-  <div class="container mt-[115px] flex max-lg:flex-col">
-    <div class="w-full max-w-[623px] lg:pb-[159px] lg:pt-[179px]">
+  <div class="container mt-[200px] flex max-lg:flex-col">
+    <div class="flex w-full max-w-[672px] flex-col justify-center lg:pl-[49px]">
       <div class="header-h1">
         <span class="text-purple">
           {{ $t('all_the_ai') }}
@@ -28,10 +28,20 @@
       </div>
     </div>
 
-    <div class="w-full bg-contain bg-top bg-no-repeat lg:bg-[url(/assets/images/top_bg.webp)]">
+    <div class="relative flex w-full items-center justify-center">
+      <div
+        class="absolute bottom-0 left-0 top-0 w-[100vw] bg-[url(/assets/images/top_bg.webp)] bg-contain bg-left-bottom bg-no-repeat max-lg:hidden"
+      />
+
+      <img
+        src="/assets/images/441.webp"
+        class="relative z-10 w-[441px] object-contain max-lg:hidden"
+        alt=""
+      />
+
       <img
         src="/assets/images/top_bg_mobile.webp"
-        class="-mt-20 w-full object-contain lg:hidden"
+        class="relative z-10 -mt-20 w-full object-contain lg:hidden"
         alt=""
       />
     </div>
