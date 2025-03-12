@@ -5,7 +5,7 @@
     :to="to"
     :target="target"
     style="outline: 0"
-    @click="$emit('click', event)"
+    @click="clickHandler"
   >
     <GIcon
       v-if="icon"
@@ -111,4 +111,20 @@ const computedClasses = computed(() => {
 
   return twMerge(classes)
 })
+
+const clickHandler = event => {
+  if (props.to?.startsWith('#')) {
+    event.preventDefault()
+
+    const el = document.querySelector(props.to)
+
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'nearest' })
+    }
+
+    return
+  }
+
+  emit('click', event)
+}
 </script>

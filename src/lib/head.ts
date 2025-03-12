@@ -3,9 +3,10 @@ import { NuxtAppConfig } from '@nuxt/schema'
 const viewport = `width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=contain`
 
 const ogDescription =
-  process?.env?.VITE_APP_DESC || `Забронируйте лыжи или сноуборд прямо сейчас и получите скидку 20%`
+  process?.env?.VITE_APP_DESC ||
+  `Discover, interact with, and use 1000+ AI models. Transform the way you experience AI with Hyperspace App`
 
-const ogTitle = process?.env?.VITE_APP_NAME || 'HyperSpace'
+const ogTitle = process?.env?.VITE_APP_NAME || 'Hyperspace AI App|All-in-one AI Tools App'
 
 const ogUrl = 'https://hyperspace.ai/'
 
@@ -29,7 +30,7 @@ const getOpenGraphOg = (obj: Record<string, string | number>) =>
   Object.entries(obj).map(([key, value]) => ({ hid: key, property: key, content: value }), [])
 
 export const head: NuxtAppConfig['head'] = {
-  title: 'HyperSpace',
+  title: ogTitle,
   meta: [
     { charset: 'utf-8' },
     { name: 'viewport', content: viewport },

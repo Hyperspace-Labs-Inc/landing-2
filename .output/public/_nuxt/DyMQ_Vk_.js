@@ -1,0 +1,1 @@
+import{e as a,c as r,n as l,o as s}from"./4wJRZ4Mo.js";const c=a({__name:"Divider",props:{vertical:{type:Boolean}},setup(n){return(e,o)=>(s(),r("div",{class:l(["self-stretch",{"bg-black-950 relative w-[0.5px] flex-shrink-0":e.vertical,"h-[1px] bg-black-100":!e.vertical}])},null,2))}});export{c as _};

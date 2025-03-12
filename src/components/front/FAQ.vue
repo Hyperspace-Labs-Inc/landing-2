@@ -1,5 +1,5 @@
 <template>
-  <div class="container py-[72px] lg:py-[120px]">
+  <div id="faq" class="container py-[72px] lg:py-[120px]">
     <div class="flex gap-8 max-lg:flex-col lg:px-[96px]">
       <div class="flex w-full max-w-[416px] justify-end">
         <div class="h2 max-lg:text-center">

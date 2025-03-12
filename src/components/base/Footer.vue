@@ -78,10 +78,10 @@
       <div class="mt-14 flex justify-between max-lg:flex-col-reverse max-lg:gap-10 lg:mt-10">
         <div class="p-s">{{ copyright }}</div>
         <div class="flex gap-6">
-          <NuxtLink to="/terms" class="p-s transition-all hover:opacity-70">
+          <NuxtLink to="https://hyperspace.ai/terms" class="p-s transition-all hover:opacity-70">
             {{ $t('terms') }}
           </NuxtLink>
-          <NuxtLink to="/policy" class="p-s transition-all hover:opacity-70">
+          <NuxtLink to="https://hyperspace.ai/policy" class="p-s transition-all hover:opacity-70">
             {{ $t('privacy') }}
           </NuxtLink>
         </div>
@@ -100,9 +100,9 @@ const { copyright, instagram, facebook, blog, email, tiktok } = useRuntimeConfig
 const domains = useState('domains', () => [])
 
 const menu = useState('menu', () => [
-  { title: t('ai_tools'), to: '/ai-tools' },
-  { title: t('blog'), to: '/blog' },
-  { title: t('faqtitle'), to: '/faq' },
-  { title: t('contact'), to: '/contact' },
+  { title: t('ai_tools'), to: 'https://hyperspace.ai/ai-tools' },
+  { title: t('blog'), to: 'https://hyperspace.ai/blog' },
+  { title: t('faqtitle'), to: '#faq' },
+  // { title: t('contact'), to: '/contact' },
 ])
 </script>
