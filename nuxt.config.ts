@@ -18,6 +18,9 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  experimental: {
+    payloadExtraction: false, // Отключает генерацию _payload.json
+  },
   app: {
     head,
     rootId: 'app',
@@ -33,6 +36,13 @@ export default defineNuxtConfig({
         normalizeIconName: false,
       },
     ],
+  },
+  nitro: {
+    preset: 'static',
+    prerender: {
+      routes: ['/'],
+      crawlLinks: false,
+    },
   },
   vite: {
     optimizeDeps: {
@@ -69,6 +79,11 @@ export default defineNuxtConfig({
   },
   colorMode: {
     preference: 'light',
+  },
+  vue: {
+    compilerOptions: {
+      isCustomElement: (tag: string) => ['dotlottie-player'].includes(tag),
+    },
   },
   runtimeConfig: {
     public: {
