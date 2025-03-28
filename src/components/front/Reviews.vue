@@ -54,7 +54,12 @@
       </button>
     </div>
 
-    <Btn classes="mt-12 mx-auto max-lg:hidden" to="https://hyperspace.ai/onboarding-app" w-fit>
+    <Btn
+      classes="mt-12 mx-auto max-lg:hidden"
+      external
+      to="/onboarding-app"
+      w-fit
+    >
       {{ $t('solve_your') }}
     </Btn>
   </div>

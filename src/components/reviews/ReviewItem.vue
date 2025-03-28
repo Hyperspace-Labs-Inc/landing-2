@@ -1,13 +1,15 @@
 <template>
   <NuxtLink
+    external
     class="mx-2 flex w-[90vw] flex-shrink-0 flex-col gap-6 rounded-[32px] bg-black-100 p-8 lg:w-[400px]"
-    to="https://hyperspace.ai/onboarding-app"
+    to="/onboarding-app"
   >
     <span class="flex gap-4">
       <img
         v-if="icon"
         :src="icon"
         alt=""
+        loading="lazy"
         class="h-14 w-14 flex-shrink-0 rounded-full object-cover"
       />
       <span class="block">

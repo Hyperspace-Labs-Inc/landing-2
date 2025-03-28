@@ -1,13 +1,20 @@
 <template>
   <div class="container mt-[96px]">
-    <div class="flex max-lg:flex-col gap-8">
+    <div class="flex gap-8 max-lg:flex-col">
       <div class="flex flex-1 items-center justify-center">
         <div class="max-lg:text-center">
           <div class="h3" v-html="$t('real')" />
 
           <div class="p-m mt-4 lg:mt-6" v-html="$t('you_pay')" />
 
-          <Btn classes="mt-10 max-lg:hidden" w-fit to="https://hyperspace.ai/onboarding-app">{{ $t('start') }}</Btn>
+          <Btn
+            classes="mt-10 max-lg:hidden"
+            external
+            w-fit
+            to="/onboarding-app"
+          >
+            {{ $t('start') }}
+          </Btn>
         </div>
       </div>
 
@@ -17,7 +24,7 @@
             class="pointer-events-none relative w-full select-none overflow-hidden rounded-[40px]"
           >
             <img
-              src="/assets/images/savings/purple.svg"
+              src="/data/assets/images/savings/purple.svg"
               alt=""
               loading="lazy"
               class="image-sd w-full select-none rounded-[40px]"
@@ -25,7 +32,7 @@
 
             <img
               ref="imageHDRef"
-              src="/assets/images/savings/grey.svg"
+              src="/data/assets/images/savings/grey.svg"
               alt=""
               loading="lazy"
               class="image-hd z-10 w-full select-none rounded-[40px]"
@@ -39,7 +46,14 @@
           <input ref="sliderRef" type="range" min="0" max="100" value="50" class="slider" />
         </div>
 
-        <Btn classes="mt-10 mx-auto lg:hidden" w-fit to="https://hyperspace.ai/onboarding-app">{{ $t('start') }}</Btn>
+        <Btn
+          classes="mt-10 mx-auto lg:hidden"
+          external
+          w-fit
+          to="/onboarding-app"
+        >
+          {{ $t('start') }}
+        </Btn>
       </div>
     </div>
   </div>

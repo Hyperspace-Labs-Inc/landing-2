@@ -4,7 +4,7 @@
       <div class="h2 text-center">
         {{ $t('save_big') }}
         <span class="text-gradient">{{ $t('all_in_one') }}</span>
-        {{ $t('access') }}
+        {{ $t('access') }}!
       </div>
 
       <div class="u17b mt-6 flex items-center justify-center gap-4 lg:hidden">
@@ -36,7 +36,13 @@
         class="transition-all"
         :class="{ 'save-big--bg-mobile': selected, 'save-big--bg-unselectmobile': !selected }"
       >
-        <img v-if="selected" src="/assets/images/hs.webp" alt="" class="w-[81px] object-contain" />
+        <img
+          v-if="selected"
+          loading="lazy"
+          src="/data/assets/images/hs.webp"
+          alt=""
+          class="w-[81px] object-contain"
+        />
 
         <div class="mt-6 flex flex-col gap-4">
           <div v-if="!selected" class="text-purple">
@@ -80,13 +86,13 @@
           </div>
         </div>
         <img
-          src="/assets/images/arrow_down_mobile.svg"
+          src="/data/assets/images/arrow_down_mobile.svg"
           alt=""
           class="absolute left-3/4 top-full mt-[-2px]"
         />
       </div>
 
-      <div class="web-big-body mt-[73px] w-full max-lg:hidden lg:px-[96px]">
+      <div class="lg:px-[96px] web-big-body mt-[73px] w-full max-lg:hidden">
         <div class="grid grid-cols-[auto_336px_24px_336px]">
           <div></div>
           <div class="p-m block rounded-t-[32px] bg-black-950 px-9 pt-9 lg:max-w-[336px]">
@@ -99,7 +105,8 @@
             class="h5 relative flex h-full items-center justify-center rounded-t-[32px] border-l-[5px] border-r-[5px] border-t-[5px] border-purple border-b-black-1000/20 bg-white p-11 text-center lg:max-w-[336px]"
           >
             <img
-              src="/assets/images/hs.webp"
+              loading="lazy"
+              src="/data/assets/images/hs.webp"
               alt=""
               class="absolute left-1/2 top-0 z-10 mt-[-23px] w-[114px] -translate-x-1/2 object-contain"
             />
@@ -136,7 +143,7 @@
 
             for all
 
-            <img src="/assets/images/arrow_down.svg" alt="" class="absolute top-full" />
+            <img src="/data/assets/images/arrow_down.svg" alt="" class="absolute top-full" />
           </div>
         </div>
       </div>
@@ -146,7 +153,7 @@
         {{ $t('month') }}
       </div>
 
-      <Btn classes="lg:w-fit lg:mx-auto mt-6" to="https://hyperspace.ai/onboarding-app">
+      <Btn classes="lg:w-fit lg:mx-auto mt-6" external to="/onboarding-app">
         {{ $t('start_free') }}
       </Btn>
     </div>
@@ -165,13 +172,13 @@ const selected = ref(true)
     border-purple bg-white px-20 py-3
     before:absolute before:-bottom-4 before:left-4
     before:z-[-1] before:h-[400px] before:w-full
-    before:bg-[url(/assets/images/big.webp)] before:bg-[length:100%_100%]
+    before:bg-[url(/data/assets/images/big.webp)] before:bg-[length:100%_100%]
     before:bg-bottom before:bg-no-repeat before:content-[''];
 
     &-mobile {
       @apply relative mt-8 rounded-[32px] bg-white p-6 ring-[3px]  ring-inset ring-purple
       before:absolute before:-bottom-4 before:left-0 before:z-[-1]
-      before:h-[200px] before:w-full before:bg-[url(/assets/images/big.webp)]
+      before:h-[200px] before:w-full before:bg-[url(/data/assets/images/big.webp)]
       before:bg-[100%_auto] before:bg-bottom
       before:bg-no-repeat before:content-[''] lg:hidden;
     }

@@ -2,7 +2,7 @@
   <div ref="targetRef" class="relative mx-auto w-full max-w-[1440px] pt-[63px]" id="hyper-loop">
     <Transition name="fade" mode="in-out">
       <img
-        src="/assets/images/animations/hyperloop.webp"
+        src="/data/assets/images/animations/hyperloop.webp"
         alt="Loading animation"
         class="pointer-events-none w-full select-none object-contain"
         :class="{ invisible: isLoaded }"
@@ -16,7 +16,7 @@
         ref="animationRef"
         subframe
         class="pointer-events-none absolute left-0 top-0 w-full select-none"
-        src="/assets/animations/portal.lottie"
+        src="/data/assets/animations/portal.lottie"
       />
     </Transition>
   </div>

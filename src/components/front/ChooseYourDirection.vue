@@ -26,8 +26,9 @@
           "
         >
           <img
-            :src="`/assets/images/choose/${domain.label?.toLowerCase?.()}.webp`"
+            :src="`/data/assets/images/choose/${domain.label?.toLowerCase?.()}.webp`"
             alt=""
+            loading="lazy"
             class="block h-[94px] w-full rounded-2xl object-cover lg:h-[176px] lg:rounded-[40px]"
           />
 

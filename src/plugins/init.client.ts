@@ -1,12 +1,8 @@
 export default defineNuxtPlugin({
   name: 'init',
-  setup(app) {
-    const { getCatalog } = useCatalog()
+  async setup(app) {
+    const { getUser } = useUser()
 
-    // const { getReviews } = useReviews()
-
-    //  getCatalog()
-
-    // getReviews()
+    await getUser()
   },
 })

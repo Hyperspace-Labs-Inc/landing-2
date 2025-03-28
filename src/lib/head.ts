@@ -43,31 +43,104 @@ export const head: NuxtAppConfig['head'] = {
   link: [
     { hid: 'canonical', rel: 'canonical', href: 'https://hyperspace.ai/' },
 
-    // { href: '/assets/images/bg.webp', rel: 'preload', as: 'image' },
-
-    { href: '/favicon.png', rel: 'shortcut icon' },
-    { href: '/favicon.ico', rel: 'icon' },
-
     {
-      href: 'https://fonts.gstatic.com',
-      rel: 'preconnect',
-      crossorigin: 'anonymous',
-    },
-    { href: 'https://fonts.googleapis.com', rel: 'preconnect' },
-
-    {
-      href: 'https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap',
-      rel: 'stylesheet',
-      crossorigin: 'anonymous',
+      href: '/data/assets/unbounded/latin.woff2',
+      rel: 'preload',
+      crossorigin: '',
+      as: 'font',
+      type: 'font/woff2',
     },
 
+    { href: '/data/assets/animations/models.lottie', rel: 'preload', as: 'fetch' },
+
+    { href: '/data/favicon.png', rel: 'shortcut icon' },
+
+    { href: '/data/favicon.ico', rel: 'icon' },
+
     {
-      href: '/assets/sfpro/sfpro.css',
+      href: '/data/assets/unbounded/style.css',
+      rel: 'stylesheet',
+    },
+
+    {
+      href: '/data/assets/sfpro/sfpro.css',
       rel: 'stylesheet',
     },
     {
-      href: '/assets/sfpro/sfprorounded.css',
+      href: '/data/assets/sfpro/sfprorounded.css',
       rel: 'stylesheet',
+    },
+
+    {
+      href: '/data/assets/sfpro/SFProDisplay-Bold.woff2',
+      rel: 'preload',
+      crossorigin: '',
+      as: 'font',
+      type: 'font/woff2',
+    },
+
+    {
+      href: '/data/assets/sfpro/SFProDisplay-Semibold.woff2',
+      rel: 'preload',
+      crossorigin: '',
+      as: 'font',
+      type: 'font/woff2',
+    },
+
+    {
+      href: '/data/assets/sfpro/SFProDisplay-Medium.woff2',
+      rel: 'preload',
+      crossorigin: '',
+      as: 'font',
+      type: 'font/woff2',
+    },
+
+    {
+      href: '/data/assets/sfpro/SFProDisplay-Regular.woff2',
+      rel: 'preload',
+      crossorigin: '',
+      as: 'font',
+      type: 'font/woff2',
+    },
+
+    {
+      href: '/data/assets/sfpro/SF-Pro-Rounded-Medium.woff2',
+      rel: 'preload',
+      crossorigin: '',
+      as: 'font',
+      type: 'font/woff2',
+    },
+
+    {
+      href: '/data/assets/sfpro/SF-Pro-Rounded-Light.woff2',
+      rel: 'preload',
+      crossorigin: '',
+      as: 'font',
+      type: 'font/woff2',
+    },
+
+    {
+      href: '/data/assets/sfpro/SF-Pro-Rounded-Bold.woff2',
+      rel: 'preload',
+      crossorigin: '',
+      as: 'font',
+      type: 'font/woff2',
+    },
+
+    {
+      href: '/data/assets/sfpro/SF-Pro-Rounded-Semibold.woff2',
+      rel: 'preload',
+      crossorigin: '',
+      as: 'font',
+      type: 'font/woff2',
+    },
+
+    {
+      href: '/data/assets/sfpro/SF-Pro-Rounded-Regular.woff2',
+      rel: 'preload',
+      crossorigin: '',
+      as: 'font',
+      type: 'font/woff2',
     },
   ],
 }

@@ -20,3 +20,8 @@ export const toggleElementInArray = (array, element) => {
     array.value.splice(index, 1) // Remove if exists
   }
 }
+
+export const isSafari = () =>
+  /^((?!chrome|android).)*safari/i.test(
+    (typeof navigator !== 'undefined' && navigator.userAgent) || ''
+  )

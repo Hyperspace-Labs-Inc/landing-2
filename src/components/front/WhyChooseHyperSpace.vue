@@ -9,8 +9,9 @@
       <div class="flex-1 rounded-[40px] bg-white pb-20 pt-10">
         <div>
           <img
-            src="/assets/images/why/01.webp"
+            src="/data/assets/images/why/01.webp"
             alt=""
+            loading="lazy"
             class="w-full max-w-[410px] object-contain"
           />
         </div>
@@ -22,8 +23,9 @@
       <div class="flex-1 rounded-[40px] bg-white pb-20 pt-10">
         <div>
           <img
-            src="/assets/images/why/02.webp"
+            src="/data/assets/images/why/02.webp"
             alt=""
+            loading="lazy"
             class="w-full max-w-[410px] object-contain"
           />
         </div>
@@ -36,8 +38,9 @@
       <div class="flex-1 rounded-[40px] bg-white pb-20 pt-10">
         <div>
           <img
-            src="/assets/images/why/03.webp"
+            src="/data/assets/images/why/03.webp"
             alt=""
+            loading="lazy"
             class="w-full max-w-[410px] object-contain"
           />
         </div>
@@ -49,12 +52,14 @@
     </div>
 
     <Btn
+      external
       classes="mx-auto mt-10  lg:mt-[72px] mb-[72px] lg:mb-[240px]"
       w-fit
-      to="https://hyperspace.ai/onboarding-app"
+      to="/onboarding-app"
     >
       {{ $t('try_mobile') }}
     </Btn>
   </div>
 </template>
-<script setup lang="ts"></script>
+<script setup lang="ts">
+</script>

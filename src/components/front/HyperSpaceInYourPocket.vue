@@ -9,17 +9,17 @@
 
         <div class="flex gap-8 max-lg:order-1">
           <img
-            src="/assets/images/qr.webp"
+            src="/data/assets/images/qr.webp"
             class="w-[108px] flex-shrink-0 object-contain max-lg:hidden"
             alt=""
           />
 
           <div class="flex gap-3 lg:flex-col lg:gap-4">
             <NuxtLink :to="store" target="_blank">
-              <img src="/assets/images/apple.webp" class="lg:w-[135px]" alt="" />
+              <img src="/data/assets/images/apple.webp" class="lg:w-[135px]" alt="" />
             </NuxtLink>
             <NuxtLink :to="google" target="_blank">
-              <img src="/assets/images/google.webp" class="lg:w-[152px]" alt="" />
+              <img src="/data/assets/images/google.webp" class="lg:w-[152px]" alt="" />
             </NuxtLink>
           </div>
         </div>
@@ -30,7 +30,7 @@
       </div>
 
       <div class="min-w-0 flex-1">
-        <img src="/assets/images/pocket.webp" alt="" class="w-full" />
+        <img src="/data/assets/images/pocket.webp" alt="" class="w-full" />
       </div>
     </div>
   </div>

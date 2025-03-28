@@ -1,11 +1,11 @@
 <template>
-  <div class="container py-[64px] lg:py-[120px]">
-    <div class="flex gap-8 max-lg:flex-col lg:gap-[88px]">
-      <div class="w-full max-w-[584px]">
+  <div id="what" class="container py-[64px] lg:py-[120px]">
+    <div class="flex gap-8 max-lg:flex-col max-lg:items-center lg:gap-[88px]">
+      <div class="w-full max-w-[584px] flex-shrink-0">
         <div class="h2 max-lg:text-center">
           {{ $t('what_is') }}
           <br />
-          <span class="text-gradient">{{ $t('hyperspace_mobile') }}?</span>
+          <span class="text-gradient">{{ $t('hyperspace_mobile') }}</span>
         </div>
 
         <div class="p-s mt-6 lg:mt-10">{{ $t('hyperspace_app') }}</div>
@@ -17,28 +17,33 @@
 
           <div class="flex">
             <img
-              src="/assets/images/trusted/01.webp"
+              loading="lazy"
+              src="/data/assets/images/trusted/01.webp"
               alt=""
               class="relative block h-12 w-12 rounded-full border-[3px] border-white object-cover object-center"
             />
             <img
-              src="/assets/images/trusted/02.webp"
+              src="/data/assets/images/trusted/02.webp"
+              alt=""
+              loading="lazy"
+              class="relative -ml-4 block h-12 w-12 rounded-full border-[3px] border-white object-cover object-center"
+            />
+            <img
+              src="/data/assets/images/trusted/03.webp"
+              alt=""
+              loading="lazy"
+              class="relative -ml-4 block h-12 w-12 rounded-full border-[3px] border-white object-cover object-center"
+            />
+            <img
+              loading="lazy"
+              src="/data/assets/images/trusted/04.webp"
               alt=""
               class="relative -ml-4 block h-12 w-12 rounded-full border-[3px] border-white object-cover object-center"
             />
             <img
-              src="/assets/images/trusted/03.webp"
+              src="/data/assets/images/trusted/05.webp"
               alt=""
-              class="relative -ml-4 block h-12 w-12 rounded-full border-[3px] border-white object-cover object-center"
-            />
-            <img
-              src="/assets/images/trusted/04.webp"
-              alt=""
-              class="relative -ml-4 block h-12 w-12 rounded-full border-[3px] border-white object-cover object-center"
-            />
-            <img
-              src="/assets/images/trusted/05.webp"
-              alt=""
+              loading="lazy"
               class="relative -ml-4 block h-12 w-12 rounded-full border-[3px] border-white object-cover object-center"
             />
 
@@ -50,15 +55,16 @@
           </div>
         </div>
 
-        <Btn w-fit classes="mt-10 max-lg:mx-auto lg:mt-8" to="https://hyperspace.ai/onboarding-app">
+        <Btn w-fit external classes="mt-10 max-lg:mx-auto lg:mt-8" to="/onboarding">
           {{ $t('join_hyperspace') }}
         </Btn>
       </div>
 
-      <div ref="targetRef" class="relative w-full">
+      <div ref="targetRef" class="relative flex-1">
         <Transition name="fade" mode="in-out">
           <img
-            src="/assets/images/animations/models.webp"
+            loading="lazy"
+            src="/data/assets/images/animations/models.webp"
             alt="Loading animation"
             class="pointer-events-none w-full select-none object-contain"
             :class="{ '!invisible': isLoaded }"
@@ -73,7 +79,7 @@
               ref="animationRef"
               key="why"
               class="pointer-events-none absolute left-0 top-0 w-full select-none"
-              src="/assets/animations/models.lottie"
+              src="/data/assets/animations/models.lottie"
             />
           </Transition>
         </ClientOnly>

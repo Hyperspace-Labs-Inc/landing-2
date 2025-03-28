@@ -4,6 +4,7 @@
     :class="computedClasses"
     :to="to"
     :target="target"
+    :external="external"
     style="outline: 0"
     @click="clickHandler"
   >
@@ -59,6 +60,7 @@ type Props = {
   target?: string
   wFit?: boolean
   disabled?: boolean
+  external?: boolean
   loading?: boolean
   isIconOnly?: boolean
 }

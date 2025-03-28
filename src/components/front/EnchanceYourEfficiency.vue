@@ -4,7 +4,7 @@
       <div class="relative flex-1">
         <Transition name="fade" mode="in-out">
           <img
-            src="/assets/images/animations/graph.webp"
+            src="/data/assets/images/animations/graph.webp"
             alt="Loading animation"
             class="pointer-events-none w-full select-none object-contain"
             :class="{ '!invisible': isLoaded }"
@@ -18,12 +18,17 @@
               key="enhance"
               subframe
               class="pointer-events-none absolute left-0 top-0 w-full select-none"
-              src="/assets/animations/graph.json"
+              src="/data/assets/animations/graph.json"
             />
           </Transition>
         </ClientOnly>
 
-        <Btn classes="mt-10 mx-auto lg:hidden" to="https://hyperspace.ai/onboarding-app" w-fit>
+        <Btn
+          classes="mt-10 mx-auto lg:hidden"
+          external
+          to="/onboarding-app"
+          w-fit
+        >
           {{ $t('boost') }}
         </Btn>
       </div>
@@ -34,7 +39,12 @@
 
           <div class="p-m mt-4 lg:mt-10" v-html="$t('with_ai')" />
 
-          <Btn classes="mt-10 max-lg:hidden" to="https://hyperspace.ai/onboarding-app" w-fit>
+          <Btn
+            classes="mt-10 max-lg:hidden"
+            external
+            to="/onboarding-app"
+            w-fit
+          >
             {{ $t('boost') }}
           </Btn>
         </div>

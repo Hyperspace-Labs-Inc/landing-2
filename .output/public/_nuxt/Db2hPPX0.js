@@ -1,1 +1,0 @@
-import{f as s,B as a,m as c,c as r,o as i}from"./4wJRZ4Mo.js";const f={__name:"store",setup(u){var e;const{store:o,google:t}=((e=s())==null?void 0:e.public)||{},n=a(()=>/android/i.test(navigator==null?void 0:navigator.userAgent));return c(()=>{n.value?document.location.href=t:document.location.href=o}),(d,l)=>(i(),r("div"))}};export{f as default};

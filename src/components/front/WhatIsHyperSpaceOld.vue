@@ -17,27 +17,27 @@
 
           <div class="flex">
             <img
-              src="/assets/images/trusted/01.jpeg"
+              src="/data/assets/images/trusted/01.jpeg"
               alt=""
               class="relative block h-12 w-12 rounded-full border-[3px] border-white object-cover object-center"
             />
             <img
-              src="/assets/images/trusted/02.jpeg"
+              src="/data/assets/images/trusted/02.jpeg"
               alt=""
               class="relative -ml-4 block h-12 w-12 rounded-full border-[3px] border-white object-cover object-center"
             />
             <img
-              src="/assets/images/trusted/03.jpeg"
+              src="/data/assets/images/trusted/03.jpeg"
               alt=""
               class="relative -ml-4 block h-12 w-12 rounded-full border-[3px] border-white object-cover object-center"
             />
             <img
-              src="/assets/images/trusted/04.jpeg"
+              src="/data/assets/images/trusted/04.jpeg"
               alt=""
               class="relative -ml-4 block h-12 w-12 rounded-full border-[3px] border-white object-cover object-center"
             />
             <img
-              src="/assets/images/trusted/05.jpeg"
+              src="/data/assets/images/trusted/05.jpeg"
               alt=""
               class="relative -ml-4 block h-12 w-12 rounded-full border-[3px] border-white object-cover object-center"
             />
@@ -50,7 +50,12 @@
           </div>
         </div>
 
-        <Btn w-fit classes="mt-10 max-lg:mx-auto lg:mt-8" to="https://hyperspace.ai/onboarding-app">
+        <Btn
+          w-fit
+          classes="mt-10 max-lg:mx-auto lg:mt-8"
+          external
+          to="/onboarding-app"
+        >
           {{ $t('join_hyperspace') }}
         </Btn>
       </div>

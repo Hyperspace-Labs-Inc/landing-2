@@ -23,20 +23,23 @@
 <script setup lang="ts">
 import TopPart from '~/components/front/TopPart.vue'
 
-import HyperLoop from '~/components/front/HyperLoop.vue'
-
 import WhatIsHyperSpace from '~/components/front/WhatIsHyperSpace.vue'
 
-import WhyChooseHyperSpace from '~/components/front/WhyChooseHyperSpace.vue'
+const WhyChooseHyperSpace = defineAsyncComponent(
+  () => import('~/components/front/WhyChooseHyperSpace.vue')
+)
 
-import RealSavings from '~/components/front/RealSavings.vue'
+const Reviews = defineAsyncComponent(() => import('~/components/front/Reviews.vue'))
 
-import EnchanceYourEfficiency from '~/components/front/EnchanceYourEfficiency.vue'
-import Reviews from '~/components/front/Reviews.vue'
-import ChooseYourDirection from '~/components/front/ChooseYourDirection.vue'
-import ThreeSteps from '~/components/front/ThreeSteps.vue'
-import HyperSpaceInYourPocket from '~/components/front/HyperSpaceInYourPocket.vue'
-import FAQ from '~/components/front/FAQ.vue'
-import SaveBig from '~/components/front/SaveBig.vue'
-import LetTheAi from '~/components/front/LetTheAi.vue'
+const ChooseYourDirection = defineAsyncComponent(
+  () => import('~/components/front/ChooseYourDirection.vue')
+)
+
+const ThreeSteps = defineAsyncComponent(() => import('~/components/front/ThreeSteps.vue'))
+
+const FAQ = defineAsyncComponent(() => import('~/components/front/FAQ.vue'))
+
+const SaveBig = defineAsyncComponent(() => import('~/components/front/SaveBig.vue'))
+
+const LetTheAi = defineAsyncComponent(() => import('~/components/front/LetTheAi.vue'))
 </script>

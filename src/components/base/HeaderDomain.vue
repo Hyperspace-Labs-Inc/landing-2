@@ -30,10 +30,6 @@
       },
     }"
   >
-    <template #item="{ item }">
-      <NuxtLink :to="item.to">{{ item.label }}</NuxtLink>
-    </template>
-
     <button class="flex items-center gap-2 text-lg font-medium" style="outline: 0">
       {{ domain }}
       <GIcon
@@ -58,46 +54,52 @@ domains.value = [
   [
     {
       label: t('images'),
-      to: 'https://hyperspace.ai/ai-image-generator#catalog',
+      to: { path: '/ai-image-generator', hash: '#catalog' },
       title: t('images'),
       icons: ['leo', 'mid'],
       text: '+8',
+      external: true,
     },
   ],
   [
     {
       label: t('chatbots'),
-      to: 'https://hyperspace.ai/chatbots-ai#catalog',
+      to: { path: '/chatbots-ai', hash: '#catalog' },
       title: t('chatbots'),
       icons: ['gemini', 'snow', 'meta'],
       text: '+1000',
+      external: true,
     },
   ],
   [
     {
       label: t('text'),
-      to: 'https://hyperspace.ai/ai-text-generator#catalog',
+      to: { path: '/ai-text-generator', hash: '#catalog' },
       title: t('text'),
       icons: ['file'],
       text: '200',
+
+      external: true,
     },
   ],
   [
     {
       label: t('music'),
-      to: 'https://hyperspace.ai/music-generation-ai#catalog',
+      to: { path: '/music-generation-ai', hash: '#catalog' },
       title: t('music'),
       icons: ['music'],
       text: '200',
+      external: true,
     },
   ],
   [
     {
       label: t('voices'),
-      to: 'https://hyperspace.ai/voice-generation-ai#catalog',
+      to: { path: '/voice-generation-ai', hash: '#catalog' },
       title: t('voices'),
       icons: ['mic'],
       text: '48',
+      external: true,
     },
   ],
 ]
