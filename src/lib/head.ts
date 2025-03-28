@@ -51,6 +51,12 @@ export const head: NuxtAppConfig['head'] = {
       type: 'font/woff2',
     },
 
+    { href: '/data/assets/images/441.webp', rel: 'preload', as: 'image' },
+
+    { href: '/data/assets/images/top_bg.webp', rel: 'preload', as: 'image' },
+
+    { href: '/data/assets/images/top_bg_mobile.webp', rel: 'preload', as: 'image' },
+
     { href: '/data/assets/animations/models.lottie', rel: 'preload', as: 'fetch' },
 
     { href: '/data/favicon.png', rel: 'shortcut icon' },
